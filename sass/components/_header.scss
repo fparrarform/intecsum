@@ -1,0 +1,144 @@
+//mainheader
+
+    //layout
+
+body{
+    width: 100vw;
+}
+
+header{
+    display: grid;    
+    grid-template-rows: 40px 40px 40px auto;
+    grid-template-columns: 15% 40% auto;
+    font-family: "Comfortaa";
+    border: 1px solid $color__main;   
+
+    #nav-site{
+        grid-column: 3 / 4;
+        grid-row: 1 / 1;
+        font-size: calc(0.65em + 0.2vw);    
+    }
+    .logo{        
+        justify-self: left;      
+        height: inherit;
+        grid-column-start: 1;
+        grid-row: 1 / 4;        
+        svg{
+            height: 90%;
+            width: 90%;
+            min-width: 50px;
+        }
+    }
+    .search-box{
+        display: flex;
+        min-width: 150px;        
+        grid-column: 2 / 3;        
+        grid-row: 2 / 2;
+        background-color: white;        
+        border: 2px solid $color__main;
+        input{
+            border: $color__main-light;
+            margin: auto;
+            width: 80%;
+        }
+    }
+    #user-area{
+        grid-row-start: 2;
+        background-color: $color__main-light;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom-left-radius: 60px;
+        margin-left: 10px;        
+    }
+    #nav-ecommerce{
+        grid-column: 1 / 4;
+        grid-row: 4 / 4;      
+        justify-content: center;
+        font-weight: bolder;
+        font-size: 1.6em;
+        color: white;
+    }
+    #claim{
+        grid-row: 3 / 3;
+        margin: auto 0;
+        font-weight: bold;
+        color: $color__main;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header{
+        font-size: 0.8em;
+        grid-template-columns: auto auto auto;
+    }
+    .search-box{
+        grid-column: 1 / 1;
+    }
+
+    #nav-site{
+        grid-column: 2 / 4 !important;
+        height: 30px;
+        margin-right: 20px;
+        ul li{
+            margin: auto;
+        }
+    }
+    #user-area {
+        min-width: 90px;
+
+        span{
+            display: none;
+        }
+    }
+    #claim{
+        display: none;
+    }
+    #nav-ecommerce{
+        display: none;
+        ul{ 
+            justify-content: stretch;                     
+            flex-wrap: wrap;            
+            li{
+                width: 49%;
+                margin:1px auto;
+            }
+        }
+    }
+   
+ }
+ 
+ .brand-message{
+     margin: 20px 0;
+     ul{
+         height: 70px;
+         background-color: $color__grey-light;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         li{             
+             display: flex;             
+             align-items: center;   
+             margin: auto;
+             span{
+                width: 50%;
+             }
+             .fas{
+                margin-right: 15px;
+                font-size: calc(20px + 0.5vw);                
+            }
+         }
+         
+     }
+ }
+
+
+ .wrapper-home{
+     width: 60%;
+     margin: auto;
+ }
+
+ ul>li>ul>li{
+     display: none;
+     
+ }
