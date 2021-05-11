@@ -4,6 +4,7 @@
 
 body{
     width: 100vw;
+    
 }
 
 header{
@@ -84,6 +85,13 @@ header{
             margin: auto;
         }
     }
+
+    // #brand-message{
+    //     ul li{
+    //         justify-content: flex-start !important;
+    //     }
+    // }
+
     #user-area {
         min-width: 90px;
 
@@ -110,18 +118,23 @@ header{
  
  .brand-message{
      margin: 20px 0;
-     ul{
-         height: 70px;
-         background-color: $color__grey-light;
+     background-color: #BEBEBE;
+     padding: 5px;
+     border-radius: 10px;
+     ul{ 
+         margin: auto;
+         height: auto;         
          display: flex;
          flex-wrap: wrap;
          justify-content: space-between;
          li{             
-             display: flex;             
-             align-items: center;   
-             margin: auto;
+             display: flex;
+             width: 200px;             
+             align-items: center;             
+             margin: auto;             
+             
              span{
-                width: 50%;
+                
              }
              .fas{
                 margin-right: 15px;
@@ -134,7 +147,7 @@ header{
 
 
  .wrapper-home{
-     width: 60%;
+     width: 50%;
      margin: auto;
  }
 
@@ -142,3 +155,28 @@ header{
      display: none;
      
  }
+
+
+//  #consumibles {
+//      height: 200px;
+     
+//      article {
+//          height: 40px;
+//          background-color: red;
+//      }
+//      ul {
+//          display: flex;
+//          flex-wrap: wrap;
+//          flex-direction: column;
+//      }
+//      ul li{
+//          display: inline-block;
+//      }
+//  }
+
+
+.test {
+    display: flex;
+    flex-wrap: wrap;    
+    flex-direction: column;
+}
