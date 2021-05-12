@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1f466d5c7c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">    
 
@@ -202,37 +203,213 @@
                     <li><i class="fas fa-shield-alt"></i><span>Pago 100% seguro</span></li>
                 </ul>
             </div>
-            <section id="consumibles" class="familia">
-                <h1>Consumibles</h1>
-                <article>
-                    <ul>
-                        <li>
+            <hr>
+            <section class="familia consumibles">
+                <h1>Consumibles</h1>                
+                    <ul class="wrap-list dropdown-list">
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
                             <ul>
-                                <li>Lorem ipsum miau</li>
-                                <li>Lorem ipsum miau</li>
-                                <li>Lorem ipsum miau</li>
-                                <li>Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
                             </ul>
                         </li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                    </ul>
-                </article>
-                <article>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                    </ul>                
+               
+                <section class="destacados">
                     <h2>Destacados</h2>
-                    <div id="wrapper wrapper-destacados">
-                        <article>
-
+                    <div class="wrapper wrapper-destacados">
+                        <article class="article-mid">                           
+                                <img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg">
+                                <h3>Bacclinic 750 ml con Pulverizador</h3>
+                                <span><a href="">Quimicos para limpieza</a></span>
+                                <div class="amount">
+                                    <button class="context-button">-</button>
+                                    <input>
+                                    <button class="context-button">+</button>
+                                </div>
+                                <div>
+                                    <span>14€</span>
+                                </div>
+                                <button class="primary-button">añadir a la cesta</button>                           
                         </article>
-                        <article>
-
+                        <article class="article-mid">                           
+                            <img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg">
+                            <h3>Bacclinic 750 ml con Pulverizador</h3>
+                            <span><a href="">Quimicos para limpieza</a></span>
+                            <div class="amount">
+                                <button class="context-button">-</button>
+                                <input>
+                                <button class="context-button">+</button>
+                            </div>
+                            <div>
+                                <span>14€</span>
+                            </div>
+                            <button class="primary-button">añadir a la cesta</button>                           
                         </article>
+                            <article class="article-mid">                           
+                                <img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg">
+                                <h3>Bacclinic 750 ml con Pulverizador</h3>
+                                <span><a href="">Quimicos para limpieza</a></span>
+                                <div class="amount">
+                                    <button class="context-button">-</button>
+                                    <input>
+                                    <button class="context-button">+</button>
+                                </div>
+                                <div>
+                                    <span>14€</span>
+                                </div>
+                                <button class="primary-button">añadir a la cesta</button>                           
+                         </article>                    
                     </div>
-                </article>      
+                </section>      
+            </section>
+            <section class="familia recambios">
+                <h1>Recambios</h1>                
+                    <ul class="wrap-list dropdown-list">
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item"><button class="dropdown-button"><i></i></button><span>Lavado en seco</span>
+                            <ul>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                                <li class="dropdownChildCollapse">Lorem ipsum miau</li>
+                            </ul>
+                        </li>
+                    </ul>                
+               
+                <section class="destacados">
+                    <h2>Destacados</h2>
+                    <div class="wrapper wrapper-destacados">
+                        <article class="article-mid">                           
+                                <img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg">
+                                <h3>Bacclinic 750 ml con Pulverizador</h3>
+                                <span><a href="">Quimicos para limpieza</a></span>
+                                <div class="amount">
+                                    <button class="context-button">-</button>
+                                    <input>
+                                    <button class="context-button">+</button>
+                                </div>
+                                <div>
+                                    <span>14€</span>
+                                </div>
+                                <button class="primary-button">añadir a la cesta</button>                           
+                        </article>
+                        <article class="article-mid">                           
+                            <img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg">
+                            <h3>Bacclinic 750 ml con Pulverizador</h3>
+                            <span><a href="">Quimicos para limpieza</a></span>
+                            <div class="amount">
+                                <button class="context-button">-</button>
+                                <input>
+                                <button class="context-button">+</button>
+                            </div>
+                            <div>
+                                <span>14€</span>
+                            </div>
+                            <button class="primary-button">añadir a la cesta</button>                           
+                        </article>
+                            <article class="article-mid">                           
+                                <img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg">
+                                <h3>Bacclinic 750 ml con Pulverizador</h3>
+                                <span><a href="">Quimicos para limpieza</a></span>
+                                <div class="amount">
+                                    <button class="context-button">-</button>
+                                    <input>
+                                    <button class="context-button">+</button>
+                                </div>
+                                <div>
+                                    <span>14€</span>
+                                </div>
+                                <button class="primary-button">añadir a la cesta</button>                           
+                         </article>                    
+                    </div>
+                </section>      
             </section>
         </main>
+        <footer>
+            
+        </footer>
     </div>
     
 </body>

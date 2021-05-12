@@ -2,17 +2,13 @@
 
     //layout
 
-body{
-    width: 100vw;
-    
-}
 
 header{
     display: grid;    
     grid-template-rows: 40px 40px 40px auto;
     grid-template-columns: 15% 40% auto;
     font-family: "Comfortaa";
-    border: 1px solid $color__main;   
+    // border: 1px solid $color__main;   
 
     #nav-site{
         grid-column: 3 / 4;
@@ -69,6 +65,12 @@ header{
 }
 
 @media screen and (max-width: 650px) {
+
+    .wrapper-home{
+        width: 90% !important;
+        margin: auto;
+    }
+
     header{
         font-size: 0.8em;
         grid-template-columns: auto auto auto;
@@ -85,12 +87,6 @@ header{
             margin: auto;
         }
     }
-
-    // #brand-message{
-    //     ul li{
-    //         justify-content: flex-start !important;
-    //     }
-    // }
 
     #user-area {
         min-width: 90px;
@@ -116,67 +112,7 @@ header{
    
  }
  
- .brand-message{
-     margin: 20px 0;
-     background-color: #BEBEBE;
-     padding: 5px;
-     border-radius: 10px;
-     ul{ 
-         margin: auto;
-         height: auto;         
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-         li{             
-             display: flex;
-             width: 200px;             
-             align-items: center;             
-             margin: auto;             
-             
-             span{
-                
-             }
-             .fas{
-                margin-right: 15px;
-                font-size: calc(20px + 0.5vw);                
-            }
-         }
-         
-     }
- }
 
 
- .wrapper-home{
-     width: 50%;
-     margin: auto;
- }
-
- ul>li>ul>li{
-     display: none;
-     
- }
 
 
-//  #consumibles {
-//      height: 200px;
-     
-//      article {
-//          height: 40px;
-//          background-color: red;
-//      }
-//      ul {
-//          display: flex;
-//          flex-wrap: wrap;
-//          flex-direction: column;
-//      }
-//      ul li{
-//          display: inline-block;
-//      }
-//  }
-
-
-.test {
-    display: flex;
-    flex-wrap: wrap;    
-    flex-direction: column;
-}
