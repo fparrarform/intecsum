@@ -1,0 +1,28 @@
+.brand-message{
+    margin: 20px 0;
+    background-color: $color__grey-light;
+    padding: 5px;
+    border-radius: 10px;
+    ul{ 
+        margin: auto;
+        height: auto;         
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{             
+            display: flex;
+            width: 200px;             
+            align-items: center;             
+            margin: auto;             
+            
+            span{
+               
+            }
+            .fas{
+               margin-right: 15px;
+               font-size: calc(20px + 0.5vw);                
+           }
+        }
+        
+    }
+}
