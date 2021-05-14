@@ -5,11 +5,39 @@ $font_highlights: 'Comfortaa', sans-serif;
 
 h1,h2,h3, .primary-button{
     font-family: 'Comfortaa';
+    color: $color__grey-dark;
 }
 
-
-
-
-span {
+span, li, a {
     font-family: 'Roboto';
+    color: $color__grey-dark;
+}
+
+#nav-ecommerce ul li {
+    color:white;
+    font-weight: bolder;
+    font-size: 1.6em;   
+}
+
+#claim span{
+    font-weight: bold;
+    color: $color__main;
+}
+
+.dropdown-button{
+    i{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    & ~ span{
+        color: $color__main;
+        font-weight: bolder; 
+    } 
+    
+}
+
+#nav-site{
+    li{
+        font-family: "Comfortaa"
+    }
 }

@@ -1,8 +1,18 @@
 //dropdown lists
 
 .wrap-list{
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
+    
+    display: flex;    
+    justify-content: space-evenly;
     flex-flow: column wrap;
 }  
+
+
+
+
+@media screen and ($smphone) {
+    .wrap-list {
+        height: auto;
+        gap: 5px;       
+    }
+}

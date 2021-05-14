@@ -31,15 +31,40 @@ nav li {
 
 #nav-ecommerce {
     ul{
-        display: flex;      
-        li{
+        display: flex;                     
+        li{            
             text-align: center;
+            flex-basis: 25%;
             background-color: $color__main;
-            padding: 25px 0;
-            width: 25%;
+            padding: 25px 0;            
             border-right: 0.1px $color__main-light solid;
-            min-width: 150px;           
+            min-width: 150px;
+            &:hover{
+                background-color: $color__main;
+            }
+            a{
+                color: white;
+            }
         }
         
     }
+  
 }
+
+
+@media screen and ($smphone) {
+    #nav-ecommerce{
+        ul{
+            flex-direction: column; 
+            li{
+                font-size: 20px;
+                padding: 10px;
+                border-top: 1px solid white;
+            }
+        }          
+       
+    }
+}
+
+//  
+

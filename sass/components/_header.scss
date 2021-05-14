@@ -3,6 +3,7 @@
     //layout
 
 
+    
 header{
     display: grid;    
     grid-template-rows: 40px 40px 40px auto;
@@ -48,23 +49,14 @@ header{
         border-bottom-left-radius: 60px;
         margin-left: 10px;        
     }
-    #nav-ecommerce{
-        grid-column: 1 / 4;
-        grid-row: 4 / 4;      
-        justify-content: center;
-        font-weight: bolder;
-        font-size: 1.6em;
-        color: white;
-    }
+
     #claim{
         grid-row: 3 / 3;
-        margin: auto 0;
-        font-weight: bold;
-        color: $color__main;
+        margin: auto 0;       
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and ($smphone) {
 
     .wrapper-home{
         width: 90% !important;
@@ -98,17 +90,7 @@ header{
     #claim{
         display: none;
     }
-    #nav-ecommerce{
-        display: none;
-        ul{ 
-            justify-content: stretch;                     
-            flex-wrap: wrap;            
-            li{
-                width: 49%;
-                margin:1px auto;
-            }
-        }
-    }
+    
    
  }
  

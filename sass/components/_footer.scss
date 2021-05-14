@@ -1,0 +1,90 @@
+footer{
+    
+    .footer-nav{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;        
+        background-color: $color__main;
+        padding: 20px 0;
+        & div {
+            ul{
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    .regular-list{        
+        
+        * {
+            color: white;
+            text-decoration: none;            
+        }
+        
+        
+        & > li > ul {
+            margin: 5px 0 0 15px;
+            font-size: 0.7em;
+            border-left: 1px solid white;
+            padding: 0 10px;
+        }
+        
+    }
+    
+    aside{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5vw;            
+        .logo{            
+            width: calc(90px + 2vw);
+        }
+    }
+    
+    .conditions{
+        font-size: 0.8em;
+    }
+}
+
+
+.list-horizontal{
+    display: flex;
+    flex-basis: 600px;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.business-info{
+    display: flex;
+    padding: 10px;
+    border-top: 2px solid $color__grey-light;
+    font-size: 0.8em;
+    color: $color__grey-dark;
+    justify-content: center;
+    gap: 1vw;
+    
+}
+
+@media screen and ($smphone) {    
+    footer *{
+        font-size: 0.8rem;
+    }
+
+    .footer-nav{
+        flex-flow: column wrap;
+        align-content: space-around;
+        height: 100px;
+    }
+
+    .conditions{        
+        flex-wrap: column wrap;
+        align-content: flex-end;
+        text-align: end;        
+        gap: 5px;
+    }
+
+    .regular-list li ul {
+        display: none;
+    }
+
+}
+
