@@ -10,16 +10,20 @@
     flex-basis: 290px;
     background-color: rgba(255, 255, 255, 0);
     gap: 10px;
-    align-items: center;    
+    align-items: center;     
     padding: 30px;
     -webkit-box-shadow: 0px 6px 14px -1px rgba(222,222,222,0.57); 
     box-shadow: 0px 6px 14px -1px rgba(222,222,222,0.57);
     border-radius: 20px;
+    position: relative;
+    padding-bottom: 60px;
     
     &:hover {
         border: 2px solid $color__main;
         padding: 28px;
+        padding-bottom: 58px;
     }
+    
     
     h3{
         text-align: center;
@@ -27,6 +31,12 @@
     }
     span{
         text-align: center;
+    }
+
+    .primary-button{
+       position: absolute;
+       width: 70%;
+       bottom: 20px;
     }
 
     .amount{
