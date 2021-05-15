@@ -1,17 +1,26 @@
 .wrapper-destacados{
-    display: flex;    
+    display: flex;
+    gap: 20px;    
 }
 
-.article-mid{    
-    box-sizing: border-box;    
+.article-mid{
+    box-sizing: border-box;        
     display: flex;    
     flex-flow: column;
     flex-basis: 290px;
+    background-color: rgba(255, 255, 255, 0);
     gap: 10px;
     align-items: center;    
     padding: 30px;
     -webkit-box-shadow: 0px 6px 14px -1px rgba(222,222,222,0.57); 
     box-shadow: 0px 6px 14px -1px rgba(222,222,222,0.57);
+    border-radius: 20px;
+    
+    &:hover {
+        border: 2px solid $color__main;
+        padding: 28px;
+    }
+    
     h3{
         text-align: center;
         margin: 0px;
@@ -25,7 +34,7 @@
         justify-content: center;
         gap: 5px;
         button{
-            border: none;                         
+            border: none;                                
            
         }
         
@@ -46,7 +55,7 @@
 
     @media screen and ($smphone) {
         .wrapper-destacados{
-            
+            margin-left: none !important;
         }
     }
     

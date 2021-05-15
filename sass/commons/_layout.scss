@@ -1,9 +1,15 @@
-h1 ~ *{
-    margin-left: 30px;
-}
+.home {
+    h1 ~ *{
+        margin-left: 30px;
 
-
-.wrapper-home{
-    width: 50%;
-    margin: auto;
+        @media screen and ($smphone) {
+            margin-left: 15px;
+        }
+    }
+    
+    
+    .wrapper-home{
+        width: 50%;
+        margin: auto;
+    }
 }
