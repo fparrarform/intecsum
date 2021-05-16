@@ -1,7 +1,8 @@
 //dropdown lists
 
 .dropdown-list{    
-    display: flex;           
+    display: flex;
+    flex-basis: 500px;         
     flex-flow: row wrap;
         >li {
             flex-basis: 300px;
