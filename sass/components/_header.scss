@@ -17,14 +17,15 @@ header{
         font-size: calc(0.65em + 0.2vw);    
     }
     .logo{        
-        justify-self: left;      
-        height: inherit;
+        display: flex;
+        align-self: center;
         grid-column-start: 1;
         grid-row: 1 / 4;        
-        svg{
-            height: 90%;
-            width: 90%;
-            min-width: 50px;
+        div {
+            margin: auto;                           
+            svg{
+                height: calc(40px + 3vw)
+            }
         }
     }
     .search-box{
@@ -49,7 +50,11 @@ header{
         border-bottom-left-radius: 60px;
         margin-left: 10px;        
     }
-
+    #nav-ecommerce{
+        grid-column: 1 / 4;
+        grid-row: 4 / 4;      
+        justify-content: center;             
+    }
     #claim{
         grid-row: 3 / 3;
         margin: auto 0;       
@@ -90,7 +95,19 @@ header{
     #claim{
         display: none;
     }
-    
+    #nav-ecommerce{
+        
+        ul{ 
+            justify-content: stretch;                     
+            flex-wrap: wrap;            
+            li{
+                height: 25px;
+                font-size: 18px;
+                width: 49%;
+                margin:1px auto;
+            }
+        }
+    }
    
  }
  

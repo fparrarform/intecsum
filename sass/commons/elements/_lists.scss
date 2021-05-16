@@ -1,11 +1,41 @@
 //dropdown lists
 
-.wrap-list{
-    
-    display: flex;    
-    justify-content: space-evenly;
-    flex-flow: column wrap;
+.dropdown-list{    
+    display: flex;           
+    flex-flow: row wrap;
+        >li {
+            flex-basis: 300px;
+            div button .icon {
+                color: $color__grey-medium;
+            }       
+         
+    }
 }  
+
+.dropdown-item{
+    display: flex;
+    flex-direction: column;      
+    margin-bottom: 5px;
+    &>ul{
+        display: none;
+    }
+    &>.visible{       
+        display: flex;        
+        margin-top: 4px;
+        gap: 4px;     
+        flex-direction: column;        
+        padding-left: 40px;
+        font-size: 0.8em;        
+    }
+    .dropdownChildCollapse{        
+        font-family: Roboto;
+        color: $color__grey-medium;
+    }
+    div{
+        display: flex;
+    }
+}
+
 
 
 
@@ -13,6 +43,14 @@
 @media screen and ($smphone) {
     .wrap-list {
         height: auto;
-        gap: 5px;       
+        gap: 5px;
+        
+        
+        li {
+            flex-basis: initial;
+        }
+   
     }
+
+    
 }

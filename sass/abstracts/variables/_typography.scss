@@ -24,14 +24,17 @@ span, li, a {
     color: $color__main;
 }
 
+.icon{
+    font-family: 'Times New Roman', Times, serif;    
+}
+
 .dropdown-button{
     i{
         font-family: 'Times New Roman', Times, serif;
     }
 
     & ~ span{
-        color: $color__main;
-        font-weight: bolder; 
+        color: $color__grey-medium;
     } 
     
 }
