@@ -1,10 +1,9 @@
-@media screen {
-    @media screen and ($smphone) {
+    @media screen and (max-width: 1000px) {
         .wrapper-content{
             display: block !important;
         }
     }
-}
+
 
 
 .home {
