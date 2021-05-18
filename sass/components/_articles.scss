@@ -19,7 +19,7 @@
     box-shadow: 0px 6px 14px -1px rgba(222,222,222,0.57);
     border-radius: 20px;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 
     .anchor-img{       
         width: 100%;
@@ -33,7 +33,7 @@
     &:hover {
         border: 2px solid $color__main;
         padding: 3px;
-        padding-bottom: 58px;
+        padding-bottom: 78px;
     }
     
     
@@ -82,20 +82,17 @@
 
 .article-max{
     display: grid;
-    grid-template-columns: 30% 50% 20%;
+    grid-template-columns: 30% 45% 25%;
     grid-template-rows: auto auto auto;
+    border-bottom: 1px solid $color__main;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     
-    h3{
+    h2{
         grid-column: 1 / 4;
         grid-row: 1 / 1;    
         border-bottom: 1px solid $color__main;          
-    }
-   
-    .article-ref{
-        font-size: 0.7em;
-        align-self: flex-start;
-        
-    }
+    } 
 
     .anchor-img{
         padding: 20px;
@@ -115,6 +112,11 @@
             width: 100%;
             flex-direction: row;            
         }
+            .article-ref{
+            font-size: 0.7em;
+            align-self: flex-start;
+            
+        }
     }
     .article-info{
         display: flex;
@@ -127,21 +129,30 @@
         
         display: flex;
         flex-direction: column;
-        gap: 10%;
+        justify-content: space-around;       
         
-        .promo{
-            h5{
-              margin: 3px 0; 
+        .promo{                 
+            margin: auto;
+            border: 1px solid $color__main;            
+            padding: 10%;
+            font-size: 0.8em;
+            strong{
+                display: block;
             }
-            border: 1px solid $color__main;
-            padding: 6px;
+            &:nth-child(2){
+                border: 1px solid $color__grey-light;
+                background-color: $color__grey-light;
+            }
         }
 
+
+        
         .wrap-amount{
             display: flex;
             flex-direction: column;
-            align-items: center;                    
-            gap: 10px;            
+            align-items: center;
+            row-gap: 20px;                    
+            margin: 30px 0;         
      
             .amount{
                 display: flex;        
@@ -158,21 +169,106 @@
                     border-radius: 5px;
                     border: 1px $color__grey-dark solid; 
                 }
-              
+            }
+            .price{
+                font-size: calc(15px + 2vw);
             }
         }        
     }
     .descripcion{
-        grid-column: 2 / 4;
+        grid-column: 1 / 4;
         grid-row: 3 / 3;
     }
 }
 
+ 
 
-@media screen and ($smphone) {        
+
+
+@media screen and ($smphone) {
+
+        .wrapper-content{
+            padding: 20px;
+        }
+
         .article-mid{
             flex-basis: 80vh;      
             
+         }
+
+         .article-max{            
+            grid-template-rows: auto auto auto auto;            
+            row-gap: 40px;
+            margin-bottom: 40px;
+            
+            h2{
+                font-size: 1.5em;
+                margin-bottom: -20px;
+                text-align: center;
+            }
+
+            h4{
+                margin: 0;
+                margin-bottom: 20px;
+            }
+             .wrap-article-divimg{
+                 grid-column: 1 / 4;
+                 grid-row: 2 / 3;                 
+                 justify-content: space-between;
+                 margin-bottom: 20px;
+                 .anchor-img{
+                     margin: -30px 0;
+                 }
+                 .wrap-article-images{
+                    width: 80%;
+                    img{
+                        height: 70px;
+                    }
+                 }                
+             }       
+            .article-info{
+                font-size: 0.9em;
+                grid-column: 1 / 4;
+                grid-row: 3 / 4;
+                .caracteristicas {
+                    margin-bottom: 40px;
+                }
+            }
+                       
+
+            .article-cart{
+                font-size: 0.9em;
+                grid-column: 1 / 4;
+                grid-row: 4 / 5;
+
+                .wrap-amount{
+                    margin: 40px 0 30px 0;
+                    .amount{
+                        input{
+                            height: 40px;
+                        }
+                    }        
+                    .price{
+                        font-size: 2rem;
+                    }      
+                }
+                .primary-button{
+                    font-size: 1.3em;
+                    
+                    margin-top: -10px;
+                }
+            }
+
+
+            .descripcion{
+                grid-column: 1 / 4;
+                grid-row: 5 / 6;
+                margin-bottom: 20px;
+                p{
+                    font-size: 0.8em;
+                    line-height: 16px;
+                }
+            }
          }
     }
 

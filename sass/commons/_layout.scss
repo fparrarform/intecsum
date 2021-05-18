@@ -1,3 +1,12 @@
+@media screen {
+    @media screen and ($smphone) {
+        .wrapper-content{
+            display: block !important;
+        }
+    }
+}
+
+
 .home {
     h1 ~ *{
         margin-left: 30px;
@@ -13,8 +22,6 @@
         margin: auto;
     }
 }
-
-
 
 .wrapper-content {
     display: grid;
@@ -38,7 +45,6 @@
 
     
 }
-
 
 .consumibles {
    
@@ -113,7 +119,6 @@
 
         }
 }
-
 
 .familia {
     

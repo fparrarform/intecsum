@@ -21,7 +21,7 @@ var onError = function(err){
 browserSync.create()
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: 'localhost:3000/webintecsum'
+        proxy: 'localhost/webintecsum'
     });
 });
 
