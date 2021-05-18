@@ -9,7 +9,7 @@
     box-sizing: border-box;        
     display: flex;    
     flex-flow: column;
-    flex-basis: calc(180px + 5vw);
+    flex-basis: calc(180px + 5vw);    
     flex-grow: 1;     
     background-color: rgba(255, 255, 255, 0);
     gap: 10px;
@@ -194,18 +194,24 @@
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
 
         .wrapper-content{
             padding: 20px;
         }
 
         .article-mid{
-            flex-basis: 80vh;      
+            flex-basis: 80vh;     
             
          }
 
-         .article-max{            
+         .article-results{
+             display: flex;
+             justify-content: center;
+         }
+         
+         .article-max{     
+            flex-basis: 900px;       
             grid-template-rows: auto auto auto auto;            
             row-gap: 40px;
             margin-bottom: 40px;
@@ -289,7 +295,7 @@
     
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     .article-mid{
         max-width: initial;
         

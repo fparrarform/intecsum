@@ -1,9 +1,11 @@
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1300px) {
         .wrapper-content{
             display: block !important;
         }
     }
-
+aside{
+    display: none !important;
+}
 
 
 .home {
