@@ -50,7 +50,7 @@ header{
         border-bottom-left-radius: 60px;
         margin-left: 10px;        
     }
-    #nav-ecommerce{
+    .nav-ecommerce{
         grid-column: 1 / 4;
         grid-row: 4 / 4;      
         justify-content: center;             
@@ -95,7 +95,7 @@ header{
     #claim{
         display: none;
     }
-    #nav-ecommerce{
+    .nav-ecommerce{
         
         ul{ 
             justify-content: stretch;                     

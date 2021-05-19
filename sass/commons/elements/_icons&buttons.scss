@@ -56,27 +56,33 @@ hr{
         }    
     }
 
+ @mixin button {
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Comfortaa';    
+ }
 
 
 .primary-button{
-    border: 0px $color__main solid;
-    height: 50px;
-    background-color: $color__main;
-    padding: 5px;
-    border-radius: 5px;
-    width: 100%;
-    font-weight: bold;
+    @include button;
+    border: 2px $color__main solid;    
+    background-color: $color__main;    
     color: white;
     &:hover{
         background-color: $color__comp;
+        border-color: $color__comp
     }
 }
 
 .secondary-button{
-    border: 2px $color__main solid;
+    @include button;
+    border: 2px $color__main-light solid;
     background-color: white;
+    color: $color__iconfont;
     &:hover{
-        background-color: $color__main-light;
+        border: 3px $color__main solid;
     }
 }
 

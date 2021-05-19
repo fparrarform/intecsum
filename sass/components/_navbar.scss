@@ -33,7 +33,7 @@ nav li {
 }
 
 
-#nav-ecommerce {
+.nav-ecommerce {
     ul{
         display: flex;                     
         a{            
@@ -55,7 +55,7 @@ nav li {
 
 
 @media screen and ($smphone) {
-    #nav-ecommerce{
+    .nav-ecommerce{
         ul{
             flex-direction: column; 
             a{

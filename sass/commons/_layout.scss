@@ -3,8 +3,17 @@
             display: block !important;
         }
     }
+
+body{
+    position: relative;
+}
+
 aside{
-    display: none !important;
+    display: none;
+}
+
+.blur{
+    filter: blur(4px);
 }
 
 
@@ -245,6 +254,39 @@ aside{
 
     @media ($smphone) {
         
+        .family-menu, .blur{
+            font-size: 2em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            background-color: rgb(255, 255, 255);    
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: baseline;            
+            .wrap-list{
+                margin: 15% 0 0 5px;      
+                display: flex;
+                flex-flow: column wrap; 
+                .dropdown-item div{                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;                        
+                    }                    
+                                     
+                    
+                    .parent{
+                        height: 40px;
+                        width: 40px;                        
+                    }             
+                }
+                .visible {
+                   margin-left: 40px; 
+                }
+            
+        }
+
         .wrapper-results{   
             grid-template-columns: 25% 75%;
         }
