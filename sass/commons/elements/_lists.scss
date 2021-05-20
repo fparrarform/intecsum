@@ -17,9 +17,18 @@
     display: flex;
     flex-direction: column;      
     margin-bottom: 5px;
+    
     & ul{
         display: none;
+        color: $color__grey-light !important;          
+        .no-childrens{
+            margin-left: -20px !important;
+            line-height: 15px;
+        }
     }
+
+  
+
     & .visible{       
         display: flex;        
         margin-top: 4px;
@@ -29,11 +38,6 @@
         font-size: 0.8em;        
     }
     
-    ul li ul li ul li{
-        display: flex;
-        background-color: red;
-    }
-
     div{
         display: flex;
     }

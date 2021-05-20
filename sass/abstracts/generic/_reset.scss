@@ -1,6 +1,15 @@
-li, a{
+li {
     text-decoration: none;
     list-style: none;
+}
+
+a {
+  color: $color__main
+}
+
+#nav-site a, .nav-ecommerce a{
+  text-decoration: none;
+  color: $color__grey-medium
 }
 
 ul{

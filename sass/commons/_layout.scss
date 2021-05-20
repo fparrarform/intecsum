@@ -1,8 +1,11 @@
-    @media screen and (max-width: 1300px) {
-        .wrapper-content{
-            display: block !important;
-        }
+@media screen and (max-width: 1000px) {
+    .wrapper-content{
+        display: block !important;      
     }
+    .article-max{
+        flex-basis: 60%;       
+    }
+}
 
 body{
     position: relative;
@@ -253,8 +256,13 @@ aside{
     }
 
     @media ($smphone) {
-        
-        .family-menu, .blur{
+
+        .article-max{
+            flex-basis: 95%;       
+        }
+            
+        .family-menu {
+            display: none !important;
             font-size: 2em;
             position: absolute;
             top: 0;
@@ -269,10 +277,11 @@ aside{
                 margin: 15% 0 0 5px;      
                 display: flex;
                 flex-flow: column wrap; 
+              
                 .dropdown-item div{                        
                         display: flex;
                         align-items: center;
-                        justify-content: center;                        
+                        justify-content: center;                      
                     }                    
                                      
                     
