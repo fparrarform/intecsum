@@ -13,8 +13,14 @@ footer{
         }
 
     }
+    .nav-ecommerce-footer {
+        display: flex;
+        flex-basis: 80%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
-    .regular-list{        
+    .regular-list{      
         
         * {
             color: white;
@@ -65,14 +71,15 @@ footer{
 }
 
 @media screen and ($smphone) {    
+ 
     footer *{
-        font-size: 0.8rem;
-    }
+        font-size: 0.7rem;
+    }    
 
-    .footer-nav{
-        flex-flow: column wrap;
-        align-content: space-around;
-        height: 100px;
+    .nav-ecommerce-footer{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 20% !important;
     }
 
     .conditions{        
@@ -85,6 +92,8 @@ footer{
     .regular-list li ul {
         display: none;
     }
+
+ 
 
 }
 

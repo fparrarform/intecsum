@@ -11,4 +11,10 @@ let inputNumber = (number)=>{
 }
 
 
+// let breadCrumb = ()=>{
+//     console.log(document.URL)
+// }
+
+// breadCrumb();
+
 // dropdownChildCollapse
