@@ -19,7 +19,6 @@ aside{
     filter: blur(4px);
 }
 
-
 .home {
     h1 ~ *{
         margin-left: 30px;
@@ -322,4 +321,48 @@ aside{
     }
 
 
+}
+
+
+.quienes_somos{
+    background-color: white;
+    p{
+        line-height: 30px;
+    }
+    .video-background{
+        height: 300vh;
+        background: url(https://public.gaolos.com/cdn/public/intecsum/img/maquinaria-de-segunda-mano.jpg) no-repeat;
+        background-size: contain;
+        filter: blur(0.1rem);
+    }
+    .separador{
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+        display: block;
+        position: relative;
+        height: 30vh;
+        width: 100%;
+        
+        // background-color: rgb(0, 0, 0);
+    }
+
+    @media screen and ($smphone){
+        .separador{
+            height: 25vh;
+        }
+        .video-background{
+            background-size: contain;
+            width: 300%;            
+        }
+    }
+    .wrapper-quienes_somos{
+        background-color: white;
+        width: 100%;
+    }
+    main{
+        background-color: none;
+        width: 60%;
+        padding: 0 15px;
+        margin: auto;
+    }
 }
