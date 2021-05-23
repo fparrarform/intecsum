@@ -11,10 +11,23 @@ header{
     font-family: "Comfortaa";
     // border: 1px solid $color__main;   
 
+    #user-area * span {
+        color: $color__grey-dark;
+    }
+
     #nav-site{
         grid-column: 3 / 4;
         grid-row: 1 / 1;
-        font-size: calc(0.65em + 0.2vw);    
+        font-size: calc(0.65em + 0.2vw);
+               
+        li{
+            color: $color__grey-dark;
+            font-weight: bold;
+        }
+
+        .icon span{
+            color: black !important;
+        }
     }
     .logo{        
         display: flex;
