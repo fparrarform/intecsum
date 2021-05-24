@@ -12,9 +12,12 @@ h1,h2,h3,h4,h5,h6 {
     color: $color__comp;
 }
 
+tr, th {
+    font-family: $font__normal !important;
+}
 
-span, li, a, p, b, strong, i, label {
-    font-family: 'Roboto';
+span, li, a, p, b, strong, i, label  {
+    font-family: 'Roboto' ;
     color: $color__grey-medium;
 }
 
