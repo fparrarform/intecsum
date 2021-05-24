@@ -1,4 +1,4 @@
-hr{
+.largehr{
     border: 0.5px solid $color__grey-light;
     transform: translate(-1000px);
     width: 5000px;
@@ -59,14 +59,14 @@ hr{
  @mixin button {
     height: 50px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 5px !important;
     font-weight: bold;
-    font-family: 'Comfortaa';    
+    font-family: 'Comfortaa' !important;    
  }
 
 
 .primary-button{
-    @include button;
+    @include button;    
     border: 2px $color__main solid;    
     background-color: $color__main;    
     color: white;

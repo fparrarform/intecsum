@@ -13,9 +13,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-span, li, a, p, b, strong, i {
+span, li, a, p, b, strong, i, label {
     font-family: 'Roboto';
     color: $color__grey-medium;
+}
+
+select, textarea, input {
+    font-family: 'Roboto' !important;
 }
 
 .nav-ecommerce ul li {

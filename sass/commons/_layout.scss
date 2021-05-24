@@ -11,9 +11,9 @@ body{
     position: relative;
 }
 
-aside{
-    display: none;
-}
+// aside{
+//     display: none;
+// }
 
 
 .home {
@@ -418,4 +418,198 @@ aside{
         }
     }
 
+}
+
+.login{
+    display: grid;
+    grid-template-columns: 25% 50% auto;
+    grid-template-rows: auto auto auto;
+    justify-items: stretch;
+    gap: 40px;
+
+    header{
+        .logo{            
+            position: absolute;
+            right: 0px;
+            left: 0px;
+            top: 10px
+        }   
+    }
+
+    .smallhr{
+        width: 100%;
+        border: 1px dashed $color__main-light;
+        margin: 40px 0;
+    }
+
+
+    aside{        
+    grid-column: 1 /2;
+    display: flex;
+    padding: 3vw;
+    margin: 0 20px;
+    border-radius: 15px;
+    height: 400px;
+    background-color: $color__grey-light;
+    overflow: clip;
+    ul{
+        display: flex;  
+        flex-direction: column;
+        gap: 10px;           
+    }
+    }
+
+    main{
+        
+        .forgotPass{
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            color: grey;
+        }
+
+        button{
+            width: 100% !important;
+        }
+        
+        
+        h3{
+            margin-bottom: 60px;
+        }
+        
+        .form-check-input:checked{
+            background-color: $color__main;
+            border: 1px solid $color__main;
+        }
+        
+        border-left: 1px solid $color__main;
+        padding: 1vw 5vw;
+        margin: auto;
+        grid-column: 2 / 3;
+        width: 100%;
+        .input-group span, .input-group label {
+            margin-bottom: 10px;
+        } 
+
+        .separator{
+            margin: 80px;
+            display: flex;            
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            p{
+                margin: auto;
+                padding: 10px;
+                background-color: white;
+            }        
+
+            &:before{ 
+                position: absolute; 
+                z-index: -1;              
+                content: "";
+                height: 1px;
+                width: 80%;
+                border: 1px solid $color__main
+            }
+        }
+
+        .empresaAutonomo{
+            display: flex;
+            flex-direction: column;
+        }   
+    }
+
+    @media screen and ($smphone) {
+        display: block;
+
+        main{
+            width: 100%;
+            padding: 5px;
+        }
+
+        aside{
+            height: auto;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.cardProcess{
+    display: grid;
+    grid-template-columns: 60% auto;    
+    
+    ol{
+        padding: 0 !important;
+    }
+    .steps-wrapper{
+        
+    }           
+    .steps {
+        font-size: calc(10px + 0.5vw);
+        a{
+            text-decoration: none;
+        }
+        
+        display: flex;                                   
+        align-items: flex-end;
+    
+        li{              
+            text-align: center;
+            flex-basis: 200px;
+            .stepNumber{                    
+                position: relative;
+                margin-top: 10px;                    
+                &:before{
+                    content:"";
+                    position: absolute;
+                    top: -5px;
+                    width: 105%;                        
+                    border: 2px solid  $color__main;
+                    border-radius: 40px;                       
+                    }
+            }              
+            
+        }
+        li{
+            display: flex;
+            height: calc(50px + 8vw);
+            max-height: 160px;
+            flex-direction: column;            
+            align-content: center;
+            justify-content: flex-end;
+            position: relative;
+            i{
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                font-size: 3em;
+            }            
+        }
+
+        span{
+            display: flex;
+            flex-direction: column;            
+            flex-wrap: wrap;
+            align-items: center;         
+        }
+
+        .stepUnactive *, .stepUnactive .stepNumber:before{
+            color: rgb(207, 204, 204);
+            z-index: -1;
+            border-color: $color__grey-light !important;
+        }
+
+    }
+    main{
+        grid-column: 1 / 2;
+        
+    }
+
+    @media screen and ($smphone) {
+        display: block;   
+        .steps{
+            font-size: 0.65em;
+        }     
+    }
 }

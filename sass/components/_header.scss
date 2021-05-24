@@ -11,9 +11,16 @@ header{
     font-family: "Comfortaa";
     // border: 1px solid $color__main;   
 
-    #user-area * span {
-        color: $color__grey-dark;
-    }
+    #user-area {
+        * * {
+            color: $color__grey-dark;
+            text-decoration: none;    
+        }
+
+        div:hover *{
+            color: $color__main;   
+        }
+    } 
 
     #nav-site{
         grid-column: 3 / 4;
