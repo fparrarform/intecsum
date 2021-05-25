@@ -1,0 +1,11 @@
+.family-menu{
+    display: flex;
+    justify-content: flex-end;    
+    .dropdown-family-menu{
+        justify-content: flex-end;
+        font-size: 1.2em;
+        .has-parents{
+            line-height: 25px;
+        }
+    }
+}

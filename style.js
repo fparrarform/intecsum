@@ -11,6 +11,12 @@ let inputNumber = (number)=>{
 }
 
 
+
+let collapseExpanse2= ()=>{         
+    // document.activeElement.querySelector('i').classList.toggle("collapse");
+    document.activeElement.parentNode.querySelector('ul').classList.toggle("visible");   
+}
+
 //buttons
 
 

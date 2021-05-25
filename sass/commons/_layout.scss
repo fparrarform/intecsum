@@ -1,4 +1,9 @@
 @media screen and (max-width: 1000px) {
+
+    .family-menu{
+        display: none !important;
+    }
+    
     .wrapper-content{
         display: block !important;      
     }
@@ -31,6 +36,7 @@ body{
         margin: auto;
     }
 }
+
 
 .wrapper-content {
     display: grid;
@@ -551,7 +557,7 @@ body{
         padding: 0 2vw;        
     }
 
-    .order-summary-wrapper{   
+    .order-summary-wrapper{        
         position: relative;     
         grid-column: 3 / 4;        
         padding: 20px;
@@ -565,7 +571,10 @@ body{
         }
         .buttons{
             position: absolute;
-            bottom: 20px;
+            text-align: center;            
+            right: 0;
+            left: 0;
+            bottom: 20px;            
         }
     }
     
@@ -632,10 +641,24 @@ body{
     }
   
 
-    @media screen and ($smphone) {
-        display: block;   
-        .steps{
-            font-size: 0.65em;
-        }     
+    @media screen and (max-width: 1000px){
+        
+        display: flex;
+        flex-direction: column;            
+        .order-summary-wrapper{            
+            margin: auto;
+            .buttons{
+                margin-top: 60px;                
+                position: relative;
+            }            
+        }
+
+        @media screen and ($smphone) {        
+            .steps{        
+                font-size: 0.65em;
+            }
+    
+
+        }
     }
 }

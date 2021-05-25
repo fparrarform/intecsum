@@ -1,5 +1,58 @@
 //dropdown lists
 
+.dropdown{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    
+    ul{
+        flex-basis: calc(80px + 15vw);
+    }
+    li{
+        position: relative;
+    }
+    .has-parents{
+        font-size: 0.9em;
+        line-height: 20px;
+        li{
+            margin-left: 15px;   
+        }          
+    }
+
+    .has-parents, .has-childrens .has-parents{
+        display: none;        
+    }
+
+    .visible{
+        display: inline !important;
+    }
+
+    .has-childrens{
+        position: relative;        
+    }
+    button {
+        display: none;
+        background-color: white;
+        border: none;
+        position: absolute;
+        left: -30px;
+        
+        i{
+            color: $color__main-light;
+            &:hover{
+                color: $color__main;
+            }
+        } 
+    }
+
+    .has-childrens button {
+        display: inline;
+    }
+}
+
+
 .dropdown-list{    
     display: flex;
     flex-basis: 500px;         
@@ -20,7 +73,7 @@
     
     & ul{
         display: none;
-        color: $color__grey-light !important;          
+        color: $color__grey-light !important;       
         .no-childrens{
             margin-left: -20px !important;
             line-height: 15px;

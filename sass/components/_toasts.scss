@@ -167,8 +167,12 @@
         .btn-close{
             position: absolute;
             top: 20px;
-            right: 20px;
-        }       
+            right: 0px;
+        }
+        .btn-toast{
+            width: 100%;
+            font-family: 'Comfortaa' !important;
+        }
     }
 }
 
