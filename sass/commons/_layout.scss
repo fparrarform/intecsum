@@ -542,9 +542,10 @@ body{
 
 .cardProcess{    
     display: grid;
+    padding: 1vw 2vw;   
     gap: 40px;
     grid-template-columns: 10% 60% 30%;
-    grid-template-rows: auto auto auto;   
+    grid-template-rows: auto auto auto auto;   
     
     .steps-wrapper{
         grid-column: 2 / 4;
@@ -553,28 +554,42 @@ body{
         justify-content: space-evenly;
     }  
     main{
-        grid-column: 1 / 3;
-        padding: 0 2vw;        
+        grid-column: 1 / 3;               
     }
 
-    .order-summary-wrapper{        
-        position: relative;     
+    .order-summary-wrapper{                
+        display: flex;
+        flex-direction: column;             
         grid-column: 3 / 4;        
         padding: 20px;
         width: 80%;
         height: 80%;
-        background-color: $color__main-light;
+        background-color: $color__grey-light;
         border-radius: 15px;
         .order-summary{            
             padding: 1vw;
             width: 100%;
         }
-        .buttons{
-            position: absolute;
-            text-align: center;            
-            right: 0;
-            left: 0;
-            bottom: 20px;            
+        .buttons{            
+            text-align: center;
+            display: flex;            
+            flex-wrap: wrap;
+            margin-top: auto;
+            justify-content: center;
+            button{
+                width: 200px;
+                height: 60px;
+                a{
+                    text-decoration: none;                    
+                }
+            }
+            .secondary-button{
+                background-color: rgba(255, 255, 255, 0);
+                border: none;
+                a{
+                    font-weight: lighter;
+                }
+            }         
         }
     }
     
@@ -643,13 +658,21 @@ body{
 
     @media screen and (max-width: 1000px){
         
-        display: flex;
+        display: flex;        
         flex-direction: column;            
         .order-summary-wrapper{            
-            margin: auto;
+            width: 100%;
             .buttons{
-                margin-top: 60px;                
-                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-top: 60px;
+                .primary-button{
+                    order: -1;
+                }
+               
+                button{
+                    width: 100%;
+                }                            
             }            
         }
 
@@ -661,4 +684,99 @@ body{
 
         }
     }
+}
+
+
+.cardProcess_step2{   
+    
+    main{
+        grid-column: 1 / -1;
+    }
+    
+    .adresses-wrapper{
+        display: flex;
+        flex-direction: column;       
+    }
+    .recent-adress-wrapper{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row !important;
+     justify-content: flex-start;
+     position: relative;
+     gap: 40px;
+   
+     .recent-adress-item{              
+        
+        flex-basis: 500px;
+         border: 1px solid $color__main-light;
+         border-radius: 10px;
+         padding: 10px;
+         button{width: 100%;}
+         .form-control-header{
+             background-color: white;
+             border: none;
+             color: black;
+             font-weight: bolder;
+             margin-left: -15px;
+             &::placeholder{
+                color: black !important;
+                font-weight: bolder;
+             }            
+         }
+     }
+    }    
+    .aside-new-adress{                    
+        grid-column: 1 / -1;
+        grid-row: -1 ;  
+        
+        .recent-adress-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 90%;
+        
+        button{width: 50%;}
+        }
+        
+    }
+
+    @media screen and ($smphone) {
+        .recent-adress-wrapper{
+            justify-content: center;
+       }
+        .aside-new-adress button {button{width: 100%
+        
+        }}
+        
+    }
+}
+
+
+.cardProcess_step3{
+    main{
+        padding: 80px;
+    }
+
+    .recent-adress-item{        
+        margin: auto;
+    }
+
+    .form-check-input:checked{
+        background-color: $color__main !important;
+        border: 1px solid $color__main !important;
+    }
+    width: 100%;
+    
+    .payment-method{
+        margin-top: 100px;
+
+        .empresaAutonomo{
+            display: flex;
+            flex-direction: column;
+            .form-check{
+                margin-bottom: 10px;                
+            }
+        }  
+    }
+   
 }

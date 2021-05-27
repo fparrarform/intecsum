@@ -38,8 +38,11 @@
         width: 20px;        
     }
     td, th{
-        text-align: center !important;
-        
+        text-align: center !important;        
+    }
+
+    .th-description, .td-description{
+        text-align: left !important;
     }
 
     .amount{

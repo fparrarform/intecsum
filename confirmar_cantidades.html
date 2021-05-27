@@ -167,10 +167,10 @@
     <aside>
         <div class="steps-wrapper">            
             <ol class="steps">
-                <li class="stepActive"><a href=""><i class="fas fa-shopping-cart"></i></a><span class="stepDescription">Confirmar cantidades</span><span class="stepNumber">Paso 1</span class="stepDescription"></li>
-                <li class="stepUnactive"><span class="stepDescription"><a href=""><i class="fas fa-home"></i></a>confirmar datos, dirección y envío</span><span class="stepNumber">Paso 2</span></li>
-                <li class="stepUnactive"><a href=""><i class="far fa-credit-card"></i></a><span class="stepDescription">Revisar pedido y realizar pago</span><span class="stepNumber">Paso3</span class="stepDescription"></li>
-                <li class="stepUnactive"><a href=""><i class="fas fa-smile-beam"></i></a><span class="stepDescription">¡Pedido en camino!</span><span class="stepNumber">¡listo</span></li>
+                <li class="stepActive"><a href="confirmar_cantidades.html"><i class="fas fa-shopping-cart"></i></a><span class="stepDescription">Confirmar cantidades</span><span class="stepNumber">Paso 1</span class="stepDescription"></li>
+                <li class="stepUnactive"><span class="stepDescription"><a href="confirmar_datos.html"><i class="fas fa-home"></i></a>confirmar datos, dirección y envío</span><span class="stepNumber">Paso 2</span></li>
+                <li class="stepUnactive"><a href="confirmar_pago.html"><i class="far fa-credit-card"></i></a><span class="stepDescription">Revisar pedido y realizar pago</span><span class="stepNumber">Paso3</span class="stepDescription"></li>
+                <li class="stepUnactive"><a href="confirmada_compra"><i class="fas fa-smile-beam"></i></a><span class="stepDescription">¡Pedido en camino!</span><span class="stepNumber">¡listo</span></li>
             </ol>
         </div>
     </aside>
@@ -180,7 +180,7 @@
             <table class="article-min-table table table-striped">
                 <tr>
                     <th></th>
-                    <th>Descripción</th>
+                    <th class="th-description">Descripción</th>
                     <th>Precio unit.</th>
                     <th>Cantidad</th>
                     <th>Precio total</th>
@@ -188,14 +188,31 @@
                 </tr>
                 <tr>
                     <td class="td-image"><img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg"></td>
-                    <td class="td-description">Bacclinic 750 ml con Pulverizador INPUT</th>
+                    <td class="td-description">Bacclinic 750 ml con Pulverizador </th>
                     <td class="td-unit-price">14€</th>
                     <td class="td-units">
                         <div class="amount">
                             <button class="context-button minus" onclick="inputNumber(-1)"><i class="fas fa-minus"></i></button>
-                            <input id="input-number" type="number" value="1" min="0">
-                            <button class="context-button plus" onclick="inputNumber(1)"><i class="fas fa-plus"></i></button></td>
+                            <input id="input-number" type="number" value="1" min="1">
+                            <button class="context-button plus" onclick="inputNumber(1)"><i class="fas fa-plus"></i></button>
                         </div>
+                        </td>
+                        
+                    <td class="td-total-price">28€</td>
+                    <td class="td-delete"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                <tr>
+                    <td class="td-image"><img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg"></td>
+                    <td class="td-description">Bacclinic 750 ml con Pulverizador </th>
+                    <td class="td-unit-price">14€</th>
+                    <td class="td-units">
+                        <div class="amount">
+                            <button class="context-button minus" onclick="inputNumber(-1)"><i class="fas fa-minus"></i></button>
+                            <input id="input-number" type="number" value="1" min="1">
+                            <button class="context-button plus" onclick="inputNumber(1)"><i class="fas fa-plus"></i></button>
+                        </div>
+                        </td>
+                        
                     <td class="td-total-price">28€</td>
                     <td class="td-delete"><i class="fas fa-trash-alt"></i></td>
                 </tr>
@@ -206,8 +223,8 @@
                     <td class="td-units">
                         <div class="amount">
                             <button class="context-button minus" onclick="inputNumber(-1)"><i class="fas fa-minus"></i></button>
-                            <input id="input-number" type="number" value="1" min="0">
-                            <button class="context-button plus" onclick="inputNumber(1)"><i class="fas fa-plus"></i></button></td>
+                            <input id="input-number" type="number" value="1" min="1">
+                            <button class="context-button plus" onclick="inputNumber(1)"><i class="fas fa-plus"></i></button>
                         </div>
                     </td>
                     <td class="td-total-price">28€</td>
@@ -215,49 +232,84 @@
                 </tr>
                 <tr>
                     <td class="td-image"><img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg"></td>
-                    <td class="td-description">Bacclinic 750 ml con Pulverizador INPUT</th>
+                    <td class="td-description">Bacclinic 750 ml con Pulverizador </th>
                     <td class="td-unit-price">14€</th>
-                    <td class="td-units">2</td>
+                    <td class="td-units">
+                        <div class="amount">
+                            <button class="context-button minus" onclick="inputNumber(-1)"><i class="fas fa-minus"></i></button>
+                            <input id="input-number" type="number" value="1" min="1">
+                            <button class="context-button plus" onclick="inputNumber(1)"><i class="fas fa-plus"></i></button>
+                        </div>
+                        </td>
+                        
                     <td class="td-total-price">28€</td>
                     <td class="td-delete"><i class="fas fa-trash-alt"></i></td>
                 </tr>
                 <tr>
                     <td class="td-image"><img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg"></td>
-                    <td class="td-description">Bacclinic 750 ml con Pulverizador INPUT</th>
+                    <td class="td-description">Bacclinic 750 ml con Pulverizador </th>
                     <td class="td-unit-price">14€</th>
-                    <td class="td-units">2</td>
+                    <td class="td-units">
+                        <div class="amount">
+                            <button class="context-button minus" onclick="inputNumber(-1)"><i class="fas fa-minus"></i></button>
+                            <input id="input-number" type="number" value="1" min="1">
+                            <button class="context-button plus" onclick="inputNumber(1)"><i class="fas fa-plus"></i></button>
+                        </div>
+                        </td>
+                        
                     <td class="td-total-price">28€</td>
                     <td class="td-delete"><i class="fas fa-trash-alt"></i></td>
                 </tr>
+                <tr>
+                    <td class="td-image"><img src="http://public.intecsum.com/public/2019/11/12/lavadora-spirit-proline-wei-9080-8-kg-3-230v-descarga-con-bomba-se.jpg"></td>
+                    <td class="td-description">Bacclinic 750 ml con Pulverizador </th>
+                    <td class="td-unit-price">14€</th>
+                    <td class="td-units">
+                        <div class="amount">
+                            <button class="context-button minus" onclick="inputNumber(-1)"><i class="fas fa-minus"></i></button>
+                            <input id="input-number" type="number" value="1" min="1">
+                            <button class="context-button plus" onclick="inputNumber(1)"><i class="fas fa-plus"></i></button>
+                        </div>
+                        </td>
+                        
+                    <td class="td-total-price">28€</td>
+                    <td class="td-delete"><i class="fas fa-trash-alt"></i></td>
+                </tr>
+                    
+       
             </table>
         </div>           
     </main>
-    <aside class="order-summary-wrapper">
-        <div class="bootstrap">
-            <table class="table order-summary">
-                <tr>
-                    <th>Productos</th>
-                    <th >Total</th> 
-                </tr>
-                <tr>
-                    <td class="td-units" >23</td>
-                    <td class="td-total-price">290€</td>                    
-                </tr>
-                <tr>
-                    <td>Subtotal sin Iva</td>
-                    <td>350,90€</td>
-                </tr>
-                <tr>
-                    <th>total</th>
-                    <td>350,90€</td>
-                </tr>
-                              
-            </table>
-        </div>
-        <div class="buttons">
-            <button class="secondary-button">seguir comprando</button>
-            <button class="primary-button">continuar pedido</button>
-        </div>
+    <aside class="aside-order-summary">
+        <h3>Resumen</h3>
+        <div class="order-summary-wrapper">
+            <div class="bootstrap">
+                <table class="table order-summary">
+                    <tr>
+                        <th>Productos</th>
+                        <th >Total</th> 
+                    </tr>
+                    <tr>
+                        <td class="td-units" >23</td>
+                        <td class="td-total-price">290€</td>                    
+                    </tr>
+                    <tr>
+                        <td>Subtotal sin Iva</td>
+                        <td>350,90€</td>
+                    </tr>
+                    <tr>
+                        <th>total</th>
+                        <td>350,90€</td>
+                    </tr>
+                                  
+                </table>
+            </div>
+            <div class="buttons">
+                <button class="secondary-button"><a href="index.html">seguir comprando</a></button>
+                <a href="confirmar_datos.html"><button class="primary-button">continuar pedido</button></a>
+            </div>          
+
+        </div>    
       
     </aside>
 
