@@ -175,8 +175,44 @@
         </div>
     </aside>
     <main>
-        <h3>Detalles del pedido</h3>
+        <h1>Detalles del pedido</h1>
         <div class="bootstrap">
+        
+            <section class="payment-method">
+                <h3>Metodo de envío</h3>
+                <div class="input-group mb-3 empresaAutonomo">                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioClienteNuevo1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          <span>20€</span><span> Ordinario MRW - Entrega en 48h-72h laborables - Envío a peninsula</span>                         
+                          <span>40€</span><span> Urgente SEUR - Entrega en 24h laborables - Envío a peninsula</span>
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input form-check-input-transfer" type="radio" name="flexRadioDefault" id="flexRadioClienteNuevo2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        <span>Transferencia</span>
+                        </label>
+                      </div>
+                </div> 
+            </section>
+            <section class="payment-method">
+                <h3>Forma de pago</h3>
+                <div class="input-group mb-3 empresaAutonomo">                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioClienteNuevo1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          <span>Tarjeta bancaria</span><small> (en el próximo paso serás redirigido a la pasarela de la entidad bancaria - pasarela por triangulación)</small>                          
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input form-check-input-transfer" type="radio" name="flexRadioDefault" id="flexRadioClienteNuevo2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        <span>Transferencia</span>
+                        </label>
+                      </div>
+                </div> 
+            </section>
             <section class="adresses-wrapper">
                 <h4>Entregar a:</h4>
                 <div class="register recent-adress-wrapper">
@@ -229,41 +265,6 @@
                         <a href="confirmar_pago.html"><button class="primary-button adress-button">Modificar dirección</button></a>
                     </div> 
             </section>
-            <section class="payment-method">
-                <h3>Metodo de envío</h3>
-                <div class="input-group mb-3 empresaAutonomo">                    
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioClienteNuevo1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          <span>20€</span><span> Ordinario MRW - Entrega en 48h-72h laborables - Envío a peninsula</span>                         
-                          <span>40€</span><span> Urgente SEUR - Entrega en 24h laborables - Envío a peninsula</span>
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input form-check-input-transfer" type="radio" name="flexRadioDefault" id="flexRadioClienteNuevo2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                        <span>Transferencia</span>
-                        </label>
-                      </div>
-                </div> 
-            </section>
-            <section class="payment-method">
-                <h3>Forma de pago</h3>
-                <div class="input-group mb-3 empresaAutonomo">                    
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioClienteNuevo1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          <span>Tarjeta bancaria</span><small> (en el próximo paso serás redirigido a la pasarela de la entidad bancaria - pasarela por triangulación)</small>                          
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input form-check-input-transfer" type="radio" name="flexRadioDefault" id="flexRadioClienteNuevo2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                        <span>Transferencia</span>
-                        </label>
-                      </div>
-                </div> 
-            </section>
         </div>      
     </main>
     <aside class="aside-order-summary">
@@ -291,8 +292,8 @@
                 </table>
             </div>
             <div class="buttons">
-                <button class="secondary-button">seguir comprando</button>
-                <button class="primary-button">continuar pedido</button>
+                <button class="secondary-button"><a href="index.html">seguir comprando</a></button>
+                <a href="confirmar_compra.html"><button class="primary-button">continuar pedido</button></a>
             </div>          
 
         </div>    
