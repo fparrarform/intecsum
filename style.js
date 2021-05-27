@@ -7,7 +7,7 @@ let collapseExpanse= ()=>{
 let inputNumber = (number)=>{
     document.activeElement.parentNode.querySelector("#input-number").stepUp(number);
     console.log(`hola que ase me pone el numero ${number} o k ase`)
-    // console.log(document.activeElement.parentNode.getElementById("input-number"))
+   
 }
 
 
