@@ -8,12 +8,17 @@
         height: auto;         
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center !important;
         li{             
             display: flex;
             width: 200px;             
-            align-items: center;             
-            margin: auto;             
+            align-items: center;
+            margin: 10px;             
+            
+            &:last-child{
+                                         
+            }           
             
             span{
                
