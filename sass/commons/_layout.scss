@@ -244,12 +244,12 @@ body{
             justify-self: center;
             flex-direction: row;
             gap: 20px;
-            &::after{
-                content:">"
-            }
-            &::before{
-                content:"<"
-            }
+            // &::after{
+            //     content:">"
+            // }
+            // &::before{
+            //     content:"<"
+            // }
     
 
     }   
