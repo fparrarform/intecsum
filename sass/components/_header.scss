@@ -56,9 +56,14 @@ header{
         background-color: white;        
         border: 2px solid $color__main;
         input{
-            border: $color__main-light;            
-            width: 100%;
-            height: 100%;                   
+            border: $color__main-light;
+            padding: 10px;          
+            margin: auto;
+            width: 80%;
+            height: 100%;
+            &:focus{               
+                outline: 1px solid $color__main !important;                              
+            }              
         }
     }
     #user-area{
