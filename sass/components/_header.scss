@@ -60,10 +60,13 @@ header{
             padding: 10px;          
             margin: auto;
             width: 80%;
-            height: 100%;
+            height: 85%;
             &:focus{               
                 outline: 1px solid $color__main !important;                              
             }              
+        }
+        .search-button{
+            font-size: calc(19px + 1vw);
         }
     }
     #user-area{
@@ -91,30 +94,40 @@ header{
     .wrapper-home{
         width: 90% !important;
         margin: auto;
+    }    
+
+    .logo {
+        grid-row: 1 / 2 !important;
+        margin-top: 90px;
     }
 
     header{
         font-size: 0.8em;
         grid-template-columns: auto auto auto;
+        grid-template-rows: 30px 40px 60px;
+        gap: 20px;
     }
     .search-box{
-        grid-column: 1 / 1;
+        grid-column: 1 / -1 !important;
+        grid-row: 3 / 3 !important;
+        width: 80%;
+        margin: auto;
     }
 
     #nav-site{
-        grid-column: 2 / 4 !important;
-        height: 30px;
-        margin-right: 20px;
+        
+        grid-column: 2 / 4 !important;                      
         ul li{
             margin: auto;
         }
     }
 
     #user-area {
-        min-width: 90px;
+        grid-column: 2 / -1;
+        min-width: 90px;    
 
         span{
-            display: none;
+            
         }
     }
     #claim{
