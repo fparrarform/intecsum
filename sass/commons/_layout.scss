@@ -37,6 +37,12 @@ body{
     }
 }
 
+.wrapper-consumibles, .wrapper-familia{
+    main a:hover {
+        border: 2px solid $color__main;
+        padding: 29px;
+    }
+}
 
 .wrapper-content {
     display: grid;
