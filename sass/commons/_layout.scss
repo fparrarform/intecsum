@@ -925,7 +925,9 @@ body{
         flex-basis: 800px;
         border: 2px solid $color__main;
         border-radius: 15px;
+        
         iframe {
+            border-radius: 15px;
             height: 400px;
             width: 100%;        
         }
