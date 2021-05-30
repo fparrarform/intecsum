@@ -885,3 +885,49 @@ body{
     }
    
 }
+
+.contacto{
+   
+
+    .wrapper-home{
+        // display: flex;
+        margin: auto;
+        padding: 20px;
+        width: 70%;
+        // background-color: red;
+        // justify-content: center;
+        // flex-wrap: wrap;
+    }
+    .info-delegaciones{
+        p{margin: 10px};
+        flex-basis: 400px;       
+    }
+
+    .part-one{
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    
+    #form-contacto{
+        input{
+            margin-bottom: 20px;
+        }
+
+        .primary-button{
+            width: 100% !important;            
+        }
+    }
+
+    .street-view {
+        flex-basis: 800px;
+        border: 2px solid $color__main;
+        border-radius: 15px;
+        iframe {
+            height: 400px;
+            width: 100%;        
+        }
+    } 
+}
